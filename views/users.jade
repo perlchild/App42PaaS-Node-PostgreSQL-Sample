@@ -6,15 +6,15 @@ block content
     table
       thead
         tr
-          th Name
+          th Prenom
+          th NomDeFamille
           th Email
-          th Description
       tbody
         - each user in users.rows
           tr
-            td #{user.name}
+            td #{user.first_name}
+            td #{user.last_name}
             td #{user.email}
-            td #{user.des}
     br
 
   a(href="users/new") Add New User
